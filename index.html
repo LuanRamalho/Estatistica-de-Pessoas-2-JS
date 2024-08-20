@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estatísticas de Preferências Musicais</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Estatísticas de Preferências Musicais</h1>
+        <div class="input-group">
+            <label for="funk">Funk:</label>
+            <input type="number" id="funk" oninput="calcularTotal()">
+        </div>
+        <div class="input-group">
+            <label for="axe">Axé:</label>
+            <input type="number" id="axe" oninput="calcularTotal()">
+        </div>
+        <div class="input-group">
+            <label for="pagode">Pagode:</label>
+            <input type="number" id="pagode" oninput="calcularTotal()">
+        </div>
+        <div class="input-group">
+            <label for="samba">Samba:</label>
+            <input type="number" id="samba" oninput="calcularTotal()">
+        </div>
+        <div class="input-group">
+            <label for="eletronica">Eletrônica:</label>
+            <input type="number" id="eletronica" oninput="calcularTotal()">
+        </div>
+        <div class="input-group">
+            <label for="pop">Pop:</label>
+            <input type="number" id="pop" oninput="calcularTotal()">
+        </div>
+        <div class="input-group">
+            <label for="rock">Rock:</label>
+            <input type="number" id="rock" oninput="calcularTotal()">
+        </div>
+        <div class="input-group">
+            <label for="sertanejo">Sertanejo:</label>
+            <input type="number" id="sertanejo" oninput="calcularTotal()">
+        </div>
+        <div class="input-group">
+            <label for="reggae">Reggae:</label>
+            <input type="number" id="reggae" oninput="calcularTotal()">
+        </div>
+        <div class="input-group">
+            <label for="forro">Forró:</label>
+            <input type="number" id="forro" oninput="calcularTotal()">
+        </div>
+        <div id="totalPessoas">Total de Pessoas Pesquisadas: 0</div>
+        <button onclick="exibirResultados()">Exibir Resultados</button>
+        <div id="resultados"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
